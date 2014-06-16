@@ -67,3 +67,7 @@ for (i in seq(length(average_split_list))) {
 result <- data.frame(result)
 names(result) <- c(names(data2[1:2]), paste("average-", names(data2[3:563]), sep=""))
 for (x in activity_labels[,1]) result$activity[result$activity==x] <- activity_labels[x,2]
+result$activity <- factor(result$activity, levels=activity_labels[,2])
+
+result <- result[order(result$subject, result$activity),]
+write.table(result, file="tidy_data_set_2.txt", sep=",", row.names=FALSE)
