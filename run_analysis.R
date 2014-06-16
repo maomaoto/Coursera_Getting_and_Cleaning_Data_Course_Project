@@ -42,24 +42,28 @@ names(X_test) <- c("subject", "activity", features[,2])
 data <- rbind(X_train, X_test)
 # extract only subject/activity/mean/standard deviation
 data <- data[,grepl("subject|activity|mean\\(\\)|std\\(\\)", names(data))]
-
+# re-order the data set
+data <- data[order(data$subject, data$activity),]
+# write to file
+write.table(data, file="tidy_data_set_1.txt", sep=",", row.names=FALSE)
 
 ###################
-# for 2nd data set, only remain mean() data
-data2 <- data[,grepl("subject|activity|mean\\(\\)", names(data))]
+# 2nd data set
+data2 <- rbind(X_train, X_test)
+data2 <- data2[order(data2$subject, data2$activity),]
 
 # combine subject and activity to form split factor
 sub_act <- paste(data2$subject, data2$activity)
 # split data into each subject and each activity
-b <- split(data2, sub_act)
+split_list <- split(data2, sub_act)
 # calculate average of each column
-c <- lapply(b, function(elt) {temp <- colMeans(elt[,seq(3,35)]); temp <- c(elt[1,1:2], temp)})
+average_split_list <- lapply(split_list, function(elt) {temp <- colMeans(elt[,seq(3,563)]); temp <- c(elt[1,1:2], temp)})
 
 # combine calculated data
 result = vector()
-for (i in seq(length(c))) {
-  result = rbind(result, unlist(c[[i]]))
+for (i in seq(length(average_split_list))) {
+  result = rbind(result, unlist(average_split_list[[i]]))
 }
 result <- data.frame(result)
-names(result) <- names(data2)
+names(result) <- c(names(data2[1:2]), paste("average-", names(data2[3:563]), sep=""))
 for (x in activity_labels[,1]) result$activity[result$activity==x] <- activity_labels[x,2]
