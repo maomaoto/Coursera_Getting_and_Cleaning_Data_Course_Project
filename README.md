@@ -7,8 +7,8 @@ Usage
 	* Put run_analysis.R in the data directory (ie. "UCI HAR Dataset" in this project)
 	* Run run_analysis.R 
 	* It will produce "tidy_data_set_1.txt" and "tidy_data_set_2.txt" as the project demands
-	tidy_data_set_1.txt contains the data set as the 1st~4th requirements and arranged in the order of subject/activity
-	tidy_data_set_2.txt contains the data set as the 5th requirements and arranged in the order of subject/activity
+	* tidy_data_set_1.txt contains the data set as the 1st~4th requirements and arranged in the order of subject/activity
+	* tidy_data_set_2.txt contains the data set as the 5th requirements and arranged in the order of subject/activity
 	
 - Read data:
 	* read.table("./tidy_data_set.txt", sep=",", header=TRUE)
