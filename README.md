@@ -1,5 +1,7 @@
-Coursera Getting and Cleaning Data Course Project
-=================================================
+Coursera Getting and Cleaning Data 
+==================================
+Course Project
+==============
 
 Usage
 -----
@@ -11,7 +13,10 @@ Usage
 	* tidy_data_set_2.txt contains the data set as the 5th requirements and arranged in the order of subject/activity
 	
 - Read data:
-	* read.table("./tidy_data_set.txt", sep=",", header=TRUE)
+
+~~~
+read.table("./tidy_data_set_1.txt", sep=",", header=TRUE)
+~~~
 	
 Process Flow
 ------------
