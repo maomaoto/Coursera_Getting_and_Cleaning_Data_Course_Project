@@ -16,7 +16,7 @@ Usage
 Process Flow
 ------------
 
-First data set:
+###First data set###
 - Read activity_labels and features
 - Read train data(subject_train, X_train, y_train)
 	* Mapping y_train numbering to activity_labels, then convert into factors
@@ -28,7 +28,7 @@ First data set:
 - Use grep to remove columns other than mean() and std()
 - Use write.table to save file
 
-Second data set:
+###Second data set###
 - Use the combined data set as previous, but not removing any columns
 - Split data set according to subject and activity, generating a list of 180 elements(30 subjects * 6 activities)
 - Use lapply to calculate column mean
