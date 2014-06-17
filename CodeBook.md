@@ -7,9 +7,9 @@ It's naming is the same as original data set.(Please refer to end of this file)
 First data set
 --------------
 First data set contains 68 columns 
-	* subject
-	* activity
-	* 33 signals * 2 variables(mean(), std())
+	- subject
+	- activity
+	- 33 signals * 2 variables(mean(), std())
 The timing relationship may not be reserved, because of re-ordering with subject/activity.
 Column names could be restored from tidy_data_set_1_colnames.txt. 
 
@@ -17,9 +17,9 @@ Column names could be restored from tidy_data_set_1_colnames.txt.
 Second data set
 ---------------
 Second data set contains 563 columns
-	* subject
-	* activity
-	* 561 averaged columns (33 signals * 17 variables)
+	- subject
+	- activity
+	- 561 averaged columns (33 signals * 17 variables)
 Second data set is also arranged in the order of subject/activity.
 Column names could be restored from tidy_data_set_2_colnames.txt. 
 
@@ -27,7 +27,7 @@ Column names could be restored from tidy_data_set_2_colnames.txt.
 Naming
 ------
 
-Signals: 
+Signals: <br>
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
