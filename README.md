@@ -18,8 +18,8 @@ Usage
 	read.table("./tidy_data_set_1.txt", sep=",", header=TRUE)
 ~~~
 	
-	Column names could be restored with <strong>tidy_data_set_1/2_colnames.txt.</strong> <br>
-	read.table function will truncate some character. <br>
+Column names could be restored with <strong>tidy_data_set_1/2_colnames.txt.</strong> <br>
+read.table function will truncate some character. <br>
 	
 Process Flow
 ------------
