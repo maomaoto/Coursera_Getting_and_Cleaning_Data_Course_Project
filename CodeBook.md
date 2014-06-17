@@ -1,7 +1,7 @@
 Code Book
 =========
 
-It's naming is the same as original data set.(Please refer to Naming section of this file)
+It's naming is the same as original data set. (Please refer to Naming section of this file)
 
 
 First data set
@@ -9,10 +9,10 @@ First data set
 First data set contains 68 columns 
 - subject
 - activity
-- 33 signals * 2 variables (mean(), std() )
+- 33 signals * 2 variables (_mean()_, _std()_ )
 
 The timing relationship may not be reserved, because of re-ordering with subject/activity. <br>
-Column names could be restored from tidy_data_set_1_colnames.txt.  <br>
+Column names could be restored from ```tidy_data_set_1_colnames.txt````.  <br>
 
 
 Second data set
@@ -23,7 +23,7 @@ Second data set contains 563 columns
 - 561 averaged columns (33 signals * 17 variables)
 
 Second data set is also arranged in the order of subject/activity. <br>
-Column names could be restored from tidy_data_set_2_colnames.txt.  <br>
+Column names could be restored from `tidy_data_set_2_colnames.txt`.  <br>
 
 
 Naming
