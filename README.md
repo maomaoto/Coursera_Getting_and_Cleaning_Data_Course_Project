@@ -13,10 +13,13 @@ Usage
 	* tidy_data_set_2.txt contains the data set as the 5th requirements and arranged in the order of subject/activity
 	
 - Read data:
-
+	
 ~~~
-read.table("./tidy_data_set_1.txt", sep=",", header=TRUE)
+	read.table("./tidy_data_set_1.txt", sep=",", header=TRUE)
 ~~~
+	
+	Column names could be restored with <strong>tidy_data_set_1/2_colnames.txt.</strong> <br>
+	read.table function will truncate some character. <br>
 	
 Process Flow
 ------------
