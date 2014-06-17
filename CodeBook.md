@@ -1,7 +1,7 @@
 Code Book
 =========
 
-It's naming is the same as original data set.(Please refer to end of this file)
+It's naming is the same as original data set.(Please refer to Naming section of this file)
 
 
 First data set
