@@ -15,7 +15,7 @@ Usage
 - Read data:
 	* ```read.table("./tidy_data_set_1.txt", sep=",", header=TRUE)```
 	
-Column names could be restored with ```tidy_data_set_1_colnames.txt.``` <br>
+Column names could be restored with ```tidy_data_set_1_colnames.txt``` and ```tidy_data_set_2_colnames.txt``` <br>
 ```read.table``` function will truncate some character. <br>
 
 
