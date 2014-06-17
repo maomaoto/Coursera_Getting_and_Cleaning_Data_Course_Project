@@ -9,7 +9,7 @@ First data set
 First data set contains 68 columns 
 - subject
 - activity
-- 33 signals * 2 variables(mean(), std())
+- 33 signals * 2 variables (mean(), std() )
 
 The timing relationship may not be reserved, because of re-ordering with subject/activity. <br>
 Column names could be restored from tidy_data_set_1_colnames.txt.  <br>
