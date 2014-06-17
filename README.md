@@ -6,20 +6,21 @@ Course Project
 Usage
 -----
 - Process data:
-	* Put run_analysis.R in the data directory (ie. "UCI HAR Dataset" in this project)
-	* Run <strong>run_analysis.R</strong>
+	* Put run_analysis.R in the data directory (ie. ```UCI HAR Dataset``` in this project)
+	* Run ```run_analysis.R```
 	* It will produce "tidy_data_set_1.txt" and "tidy_data_set_2.txt" as the project demands
 	* <strong>tidy_data_set_1.txt</strong> contains the data set as the 1st~4th requirements and arranged in the order of subject/activity
 	* <strong>tidy_data_set_2.txt</strong> contains the data set as the 5th requirements and arranged in the order of subject/activity
 	
 - Read data:
-	
-~~~r
-	read.table("./tidy_data_set_1.txt", sep=",", header=TRUE)
-~~~
+
+	```read.table("./tidy_data_set_1.txt", sep=",", header=TRUE)```
 	
 Column names could be restored with <strong>tidy_data_set_1/2_colnames.txt.</strong> <br>
 read.table function will truncate some character. <br>
+
+> hello
+
 	
 Process Flow
 ------------
